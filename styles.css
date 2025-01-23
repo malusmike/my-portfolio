@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +7,22 @@
 
 /* Body und allgemeine Stile */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
 /* Header */
 header {
-    background: #5E3BEE;
+    background-color: #5E3BEE;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
-    margin-bottom: 10px;
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 header p {
@@ -30,13 +30,12 @@ header p {
     font-weight: 300;
 }
 
-/* Navigation */
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 10px 0;
+    gap: 20px;
+    list-style: none;
+    padding-top: 10px;
 }
 
 nav ul li {
@@ -55,132 +54,80 @@ nav ul li a:hover {
     color: #F5FCFF;
 }
 
-/* Main sections */
+/* Main Header Section */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #F5FCFF;
+}
+
+.main-header-left {
+    width: 50%;
+}
+
+.main-header-left h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #282938;
+}
+
+.main-header-left p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.description {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.contact-btn {
+    background-color: #5E3BEE;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #4731C8;
+}
+
+.main-header-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About, Skills, Projects Section */
 section {
     padding: 40px 20px;
     margin: 20px 0;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
-}
-
-/* Navbar */
-.Navbar {
-    width: 100%;
-    background: white;
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.Navbar .Container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.Navbar .Logo {
-    width: 150px;
-    height: 40px;
-    background: #5E3BEE;
-    border-radius: 8px;
-}
-
-.Navbar .Menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.Navbar .MenuItem {
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-}
-
-.Navbar .MenuItem:hover {
-    color: #5E3BEE;
-}
-
-.Navbar .ContactButton {
-    background: #5E3BEE;
-    padding: 12px 30px;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-}
-
-.Navbar .ContactButton .ContactText {
-    font-size: 16px;
-}
-
-/* Header Section */
-.Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F5FCFF;
-    padding: 50px;
-}
-
-.HeaderLeft {
-    max-width: 600px;
-}
-
-.HeaderLeft .HeyIAmJohn {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #282938;
-    margin-bottom: 20px;
-}
-
-.HeaderLeft .ICreateProductDesignAndBrandExperience {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #282938;
-    margin-bottom: 20px;
-}
-
-.HeaderLeft .highlight {
-    color: #5E3BEE;
-}
-
-.HeaderLeft .Description {
-    font-size: 1.2rem;
-    color: #1C1E53;
-    margin-bottom: 30px;
-}
-
-.HeaderLeft .Actions {
-    margin-top: 30px;
-}
-
-.HeaderLeft .Button {
-    background-color: #5E3BEE;
-    color: white;
-    padding: 12px 30px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
     text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.HeaderLeft .Button:hover {
-    background-color: #4731C8;
-}
-
-/* Image Styling */
-.GroupImage {
-    width: 600px;
-    height: auto;
-    border-radius: 10px;
+footer p {
+    font-size: 1rem;
 }
 
 /* Responsives Design */
@@ -189,6 +136,22 @@ footer {
         font-size: 2rem;
     }
 
-    nav ul {
+    .main-header {
         flex-direction: column;
-        gap: 10px;
+        padding: 30px;
+    }
+
+    .main-header-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-header-img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
