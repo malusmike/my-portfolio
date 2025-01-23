@@ -1,6 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form");
-    form.addEventListener("submit", (e) => {
-        alert("Vielen Dank für Ihre Nachricht! Ich melde mich so bald wie möglich.");
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("nav ul li a").forEach(anchor => {
+        anchor.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
     });
 });
