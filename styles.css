@@ -1,157 +1,123 @@
-/* Global reset */
-* {
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #F5FCFF; /* Light blue background */
+    color: #232536; /* Text color */
 }
 
-/* Body und allgemeine Stile */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* General Reset */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
 header {
-    background-color: #5E3BEE;
+    background-color: #1C1E53; /* Dark blue */
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-nav ul {
+.sticky-header {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding-top: 10px;
+    padding: 1rem 0;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #F5FCFF;
-}
-
-/* Main Header Section */
-.main-header {
+.sticky-header ul {
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.sticky-header li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sticky-header li a:hover {
+    color: #E62872; /* Pink on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 1rem;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 50px;
-    background-color: #F5FCFF;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2rem;
 }
 
-.main-header-left {
-    width: 50%;
+.intro-text {
+    max-width: 600px;
 }
 
-.main-header-left h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #282938;
+.intro h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #1C1E53;
 }
 
-.main-header-left p {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 20px 0;
+.intro .slogan {
+    font-size: 24px;
+    font-weight: 700;
+    color: #E62872; /* Highlight color */
+    margin-bottom: 1rem;
 }
 
-.description {
-    color: #555;
-    font-size: 1.1rem;
+.intro .subslogan {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
 }
 
-.contact-btn {
-    background-color: #5E3BEE;
+.intro .button-filled {
+    background-color: #5E3BEE; /* Purple */
     color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
     border: none;
-    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.contact-btn:hover {
-    background-color: #4731C8;
+.intro .button-filled:hover {
+    background-color: #4C32C3; /* Darker purple */
 }
 
-.main-header-img {
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+.intro-image img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-/* About, Skills, Projects Section */
-section {
-    padding: 40px 20px;
-    margin: 20px 0;
+/* Skills Section */
+.skills {
+    margin-bottom: 3rem;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Responsives Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .main-header {
-        flex-direction: column;
-        padding: 30px;
-    }
-
-    .main-header-left {
-        width: 100%;
-        text-align: center;
-    }
-
-    .main-header-img {
-        width: 80%;
-        margin-top: 20px;
-    }
-
-    .description {
-        font-size: 1rem;
-    }
-}
+.skills h2 {
+    font-si
