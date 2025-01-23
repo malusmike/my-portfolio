@@ -1,38 +1,140 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio von Michael Gartner - Experte für digitale Transformation und Blockchain-Technologien.">
+    <meta name="description" content="Portfolio of Michael Gartner - Expert in Digital Transformation, Blockchain, and Product Management.">
+    <meta name="author" content="Michael Gartner">
+    <meta name="keywords" content="Michael Gartner, Portfolio, Blockchain, Product Management, Digital Transformation">
     <title>Michael Gartner - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="sticky-header">
-        <nav>
+    <header>
+        <nav class="sticky-header">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">Erfahrungen</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="assets/pdf/CV_Michael_Gartner.pdf" download>Download CV</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="pages/cv.html">Experience</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <main>
-        <section class="hero">
-            <div class="hero-text">
+    <main id="home">
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-text">
                 <h1>Hey, I am Michael</h1>
-                <p>Slogan: Innovating the future of digital transformation</p>
-                <p>Mit mehr als 15 Jahren Erfahrung unterstütze ich Unternehmen, ihre Technologie- und Geschäftsziele durch modernste Strategien und Innovationen zu erreichen.</p>
-                <a href="mailto:migal@gmx.at" class="cta-button">Get in Touch</a>
+                <p class="slogan">Driving Digital Transformation and Innovation across industries.</p>
+                <p class="subslogan">
+                    With extensive experience in blockchain solutions, agile methodologies, and strategic project management, I help businesses achieve operational excellence.
+                </p>
+                <a class="button-filled" href="mailto:migal@gmx.at">Get in Touch</a>
             </div>
-            <div class="hero-image">
-                <img src="assets/images/michael.jpg" alt="Michael Gartner">
+            <div class="intro-image">
+                <img src="assets/profile.jpg" alt="Michael Gartner">
             </div>
         </section>
 
-        <!-- Skills
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Top Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="assets/icons/blockchain.png" alt="Blockchain">
+                    <h3>Blockchain Expertise</h3>
+                    <p>Implementing secure and scalable blockchain solutions.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/agile.png" alt="Agile">
+                    <h3>Agile Methodologies</h3>
+                    <p>Scrum and Kanban for optimal project delivery.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/product.png" alt="Product Development">
+                    <h3>Product Management</h3>
+                    <p>Developing innovative products for emerging markets.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/security.png" alt="Security">
+                    <h3>IT Governance</h3>
+                    <p>Ensuring compliance and robust security practices.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/strategy.png" alt="Strategy">
+                    <h3>Technology Strategy</h3>
+                    <p>Aligning business goals with technology innovations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about">
+            <div class="about-content">
+                <img src="assets/about.jpg" alt="About Michael Gartner">
+                <div>
+                    <h2>About Me</h2>
+                    <p>
+                        I am a dynamic and results-oriented professional with progressive experience in digital transformation, blockchain solutions, and agile project management. 
+                        My passion lies in driving innovation and delivering scalable technology solutions that align with business objectives.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Links -->
+        <section class="portfolio-preview">
+            <h2>My Work</h2>
+            <div class="portfolio-links">
+                <a href="pages/project1.html">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <h3>Cross-Border Crowdfunding</h3>
+                </a>
+                <a href="pages/project2.html">
+                    <img src="assets/project2.jpg" alt="Project 2">
+                    <h3>B2B Fraud Prevention Kit</h3>
+                </a>
+                <a href="pages/project3.html">
+                    <img src="assets/project3.jpg" alt="Project 3">
+                    <h3>Product Lifecycle Management</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Download Section -->
+    <section id="downloads">
+        <h2>Downloads</h2>
+        <a class="button-outline" href="downloads/michael_gartner_cv.pdf" download>Download CV</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:migal@gmx.at" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/michael--gartner/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Michael Gartner</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
