@@ -69,19 +69,69 @@ footer {
     color: white;
 }
 
-/* Responsive Header Section */
+/* Navbar */
+.Navbar {
+    width: 100%;
+    background: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar .Container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Navbar .Logo {
+    width: 150px;
+    height: 40px;
+    background: #5E3BEE;
+    border-radius: 8px;
+}
+
+.Navbar .Menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.Navbar .MenuItem {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.Navbar .MenuItem:hover {
+    color: #5E3BEE;
+}
+
+.Navbar .ContactButton {
+    background: #5E3BEE;
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.Navbar .ContactButton .ContactText {
+    font-size: 16px;
+}
+
+/* Header Section */
 .Header {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: #F5FCFF;
-    padding: 50px 20px;
+    padding: 50px;
 }
 
 .HeaderLeft {
-    text-align: center;
-    margin-bottom: 30px;
+    max-width: 600px;
 }
 
 .HeaderLeft .HeyIAmJohn {
@@ -98,32 +148,38 @@ footer {
     margin-bottom: 20px;
 }
 
-.HeaderLeft .LoremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique {
+.HeaderLeft .highlight {
+    color: #5E3BEE;
+}
+
+.HeaderLeft .Description {
     font-size: 1.2rem;
     color: #1C1E53;
     margin-bottom: 30px;
 }
 
-.Actions .Button {
+.HeaderLeft .Actions {
+    margin-top: 30px;
+}
+
+.HeaderLeft .Button {
     background-color: #5E3BEE;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 30px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
 }
 
-.Actions .Button:hover {
+.HeaderLeft .Button:hover {
     background-color: #4731C8;
 }
 
 /* Image Styling */
-.Group111 {
-    width: 100%;
-    max-width: 800px;
+.GroupImage {
+    width: 600px;
     height: auto;
-    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -136,17 +192,3 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .Header {
-        padding: 30px;
-    }
-
-    .HeaderLeft .ICreateProductDesignAndBrandExperience {
-        font-size: 2rem;
-    }
-
-    .HeaderLeft .LoremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique {
-        font-size: 1rem;
-    }
-}
