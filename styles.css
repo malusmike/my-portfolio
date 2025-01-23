@@ -3,9 +3,9 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F5F7; /* Light gray for a clean look */
+    background-color: #F4F5F7; /* Light gray for a professional feel */
     color: #212529; /* Neutral dark gray for text */
-    line-height: 1.6;
+    line-height: 1.7; /* Slightly taller line-height for better readability */
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
@@ -104,10 +104,11 @@ header {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #556B8D; /* Matches the menu color */
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 19px; /* Increased body text by 1px */
     font-weight: 400;
     margin-bottom: 2rem;
 }
@@ -128,6 +129,28 @@ header {
     background: #8899B0; /* Softer blue on hover */
 }
 
+/* Section Headings */
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #556B8D; /* Matches menu and hero for consistency */
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #8899B0; /* Softer blue-gray */
+}
+
+/* Text Blocks */
+p {
+    font-size: 19px; /* Increased text size by 1px */
+    color: #212529; /* Neutral dark gray for readability */
+    line-height: 1.8; /* Increase for better text spacing */
+    margin-bottom: 1.5rem; /* Space between paragraphs */
+}
+
 /* Skills Section */
 .skills {
     background: white;
@@ -138,9 +161,7 @@ header {
 }
 
 .skills h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 2rem;
+    color: #556B8D; /* Matches menu color */
 }
 
 .skills-grid {
@@ -175,7 +196,7 @@ header {
 }
 
 .skill-card p {
-    font-size: 14px;
+    font-size: 16px;
     color: #6B7280; /* Neutral medium gray for descriptions */
 }
 
@@ -188,10 +209,7 @@ header {
 }
 
 .portfolio h2 {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 2rem;
+    color: #556B8D; /* Matches menu color */
 }
 
 .portfolio-grid {
@@ -223,6 +241,7 @@ header {
     font-size: 20px;
     font-weight: 600;
     padding: 1rem;
+    color: #8899B0; /* Softer blue for project titles */
 }
 
 /* Footer */
