@@ -1,0 +1,3 @@
+git add .  # Fügt alle Änderungen zu deinem Commit hinzu
+git commit -m "Update Portfolio Website with project pages"  # Committe die Änderungen mit einer Nachricht
+git push origin main  # Push die Änderungen auf den „main“-Branch deines GitLab-Repositories
