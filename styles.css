@@ -1,14 +1,13 @@
-/* Reset some basic styles */
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styles for body */
+/* Body und allgemeine Stile */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -47,4 +46,107 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-siz
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F5FCFF;
+}
+
+/* Main sections */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Header Section */
+.Header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5FCFF;
+    padding: 50px 20px;
+}
+
+.HeaderLeft {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.HeaderLeft .HeyIAmJohn {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #282938;
+    margin-bottom: 20px;
+}
+
+.HeaderLeft .ICreateProductDesignAndBrandExperience {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #282938;
+    margin-bottom: 20px;
+}
+
+.HeaderLeft .LoremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique {
+    font-size: 1.2rem;
+    color: #1C1E53;
+    margin-bottom: 30px;
+}
+
+.Actions .Button {
+    background-color: #5E3BEE;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Actions .Button:hover {
+    background-color: #4731C8;
+}
+
+/* Image Styling */
+.Group111 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Header {
+        padding: 30px;
+    }
+
+    .HeaderLeft .ICreateProductDesignAndBrandExperience {
+        font-size: 2rem;
+    }
+
+    .HeaderLeft .LoremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique {
+        font-size: 1rem;
+    }
+}
