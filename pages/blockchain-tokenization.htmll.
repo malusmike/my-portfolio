@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Tokenization</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blockchain Tokenization</h1>
+        <nav><a href="../index.html">Back to Home</a></nav>
+    </header>
+
+    <section>
+        <h2>Project Overview</h2>
+        <p>Developed a cross-border crowdfunding investment platform integrating blockchain for secure asset management.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>Blockchain-based asset tokenization</li>
+            <li>Integration with financial regulations (ECSP compliance)</li>
+            <li>Smart contract implementation</li>
+        </ul>
+        
+        <h2>Outcome</h2>
+        <p>The platform enabled secure digital investments, with over €150M in transactions processed.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Michael Gartner | All rights reserved</p>
+    </footer>
+</body>
+</html>
