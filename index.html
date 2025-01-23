@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Gartner - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Michael Gartner</h1>
-        <p>CTO | Digital Transformation | Innovation | FinTech</p>
-        <nav>
-            <ul>
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#skills">Fähigkeiten</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Michael Gartner</h1>
+            <p>CTO | Digital Transformation | Innovation | FinTech</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Über mich</a></li>
+                    <li><a href="#skills">Fähigkeiten</a></li>
+                    <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <section id="about">
+    <section id="about" class="container">
         <h2>Über mich</h2>
         <p>Ich bin ein erfahrener Technologieexperte mit über 10 Jahren Erfahrung in digitaler Transformation, FinTech, und Produktentwicklung. Ich habe innovative Lösungen für Crowdfunding, Open Banking und Blockchain implementiert.</p>
     </section>
     
-    <section id="skills">
+    <section id="skills" class="container">
         <h2>Fähigkeiten</h2>
         <ul>
             <li>Digitale Transformation</li>
@@ -37,7 +40,7 @@
         </ul>
     </section>
     
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>Projekte</h2>
         <div class="project">
             <h3>Blockchain-Tokenisierung & ECSP Compliance</h3>
@@ -53,7 +56,7 @@
         </div>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="container">
         <h2>Kontakt</h2>
         <p>Email: <a href="mailto:migal@gmx.at">migal@gmx.at</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/michael--gartner/">Michael Gartner</a></p>
@@ -61,7 +64,9 @@
     </section>
     
     <footer>
-        <p>&copy; 2025 Michael Gartner | Alle Rechte vorbehalten</p>
+        <div class="container">
+            <p>&copy; 2025 Michael Gartner | Alle Rechte vorbehalten</p>
+        </div>
     </footer>
 </body>
 </html>
