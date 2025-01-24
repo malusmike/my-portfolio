@@ -1,211 +1,140 @@
-Vielen Dank, dass Sie den Link zu Ihrem GitHub-Repository bereitgestellt haben. Ich habe die Dateien `index.html` und `styles.css` aus Ihrem Repository abgerufen. Basierend auf den verfügbaren Informationen und Ihren vorherigen Anmerkungen habe ich einige Anpassungen vorgenommen, um die Lesbarkeit zu verbessern und sicherzustellen, dass der Text nicht am linken Rand klebt.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Michael Gartner - Expert in Digital Transformation, Blockchain, and Product Management.">
+    <meta name="author" content="Michael Gartner">
+    <meta name="keywords" content="Michael Gartner, Portfolio, Blockchain, Product Management, Digital Transformation">
+    <title>Michael Gartner - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="sticky-header">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="pages/CV.html">Experience</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-**Aktualisierte `styles.css`:**
+    <main id="home">
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Hey, I am Michael</h1>
+                <p class="slogan">Driving Digital Transformation and Innovation across industries.</p>
+                <p class="subslogan">
+                    With extensive experience in blockchain solutions, agile methodologies, and strategic project management, I help businesses achieve operational excellence.
+                </p>
+                <a class="button-filled" href="mailto:migal@gmx.at">Get in Touch</a>
+            </div>
+            <div class="intro-image">
+                <img src="assets/profile.jpg" alt="Michael Gartner">
+            </div>
+        </section>
 
-```css
-/* Global Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F4F5F7; /* Helles Grau für ein professionelles Erscheinungsbild */
-    color: #212529; /* Neutrales Dunkelgrau für Text */
-    line-height: 1.7; /* Etwas größerer Zeilenabstand für bessere Lesbarkeit */
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
-}
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Top Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="assets/icons/blockchain.png" alt="Blockchain">
+                    <h3>Blockchain Expertise</h3>
+                    <p>Implementing secure and scalable blockchain solutions.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/agile.png" alt="Agile">
+                    <h3>Agile Methodologies</h3>
+                    <p>Scrum and Kanban for optimal project delivery.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/product.png" alt="Product Development">
+                    <h3>Product Management</h3>
+                    <p>Developing innovative products for emerging markets.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/security.png" alt="Security">
+                    <h3>IT Governance</h3>
+                    <p>Ensuring compliance and robust security practices.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/strategy.png" alt="Strategy">
+                    <h3>Technology Strategy</h3>
+                    <p>Aligning business goals with technology innovations.</p>
+                </div>
+            </div>
+        </section>
 
-/* Allgemeiner Reset */
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
-}
+        <!-- About Me Section -->
+        <section class="about">
+            <div class="about-content">
+                <img src="assets/about.jpg" alt="About Michael Gartner">
+                <div>
+                    <h2>About Me</h2>
+                    <p>
+                        I am a dynamic and results-oriented professional with progressive experience in digital transformation, blockchain solutions, and agile project management. 
+                        My passion lies in driving innovation and delivering scalable technology solutions that align with business objectives.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+        <!-- Portfolio Links -->
+        <section class="portfolio-preview">
+            <h2>My Work</h2>
+            <div class="portfolio-links">
+                <a href="pages/project1.html">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <h3>Cross-Border Crowdfunding</h3>
+                </a>
+                <a href="pages/project2.html">
+                    <img src="assets/project2.jpg" alt="Project 2">
+                    <h3>B2B Fraud Prevention Kit</h3>
+                </a>
+                <a href="pages/project3.html">
+                    <img src="assets/project3.jpg" alt="Project 3">
+                    <h3>Product Lifecycle Management</h3>
+                </a>
+            </div>
+        </section>
+    </main>
 
-a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
+    <!-- Download Section -->
+    <section id="downloads">
+        <h2>Downloads</h2>
+        <a class="button-outline" href="downloads/michael_gartner_cv.pdf" download>Download CV</a>
+    </section>
 
-a:hover {
-    color: #556B8D; /* Gedämpfte blaue Hover-Farbe */
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:migal@gmx.at" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-/* Container für Seiteninhalt */
-.container {
-    max-width: 1100px; /* Begrenzung der Inhaltsbreite */
-    margin: 0 auto; /* Zentriert den Inhalt horizontal */
-    padding: 0 2rem; /* Fügt links und rechts Padding hinzu */
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-/* Header */
-header {
-    background-color: #FFFFFF; /* Sauberer weißer Header */
-    border-bottom: 1px solid #E0E2E5; /* Leichte Trennlinie */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-.sticky-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/michael--gartner/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
 
-.sticky-header ul {
-    display: flex;
-    gap: 2rem;
-}
+    <footer>
+        <p>© 2025 Michael Gartner</p>
+    </footer>
 
-.sticky-header li a {
-    font-size: 16px;
-    font-weight: 500;
-    color: #556B8D; /* Gedämpftes Blau */
-    transition: color 0.3s ease;
-}
-
-.sticky-header li a:hover {
-    color: #8899B0; /* Weicheres Blau-Grau */
-}
-
-.sticky-header .cta-button {
-    background: #556B8D; /* Gedämpftes Blau */
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 24px;
-    padding: 0.5rem 1.5rem;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.sticky-header .cta-button:hover {
-    background: #8899B0; /* Weicheres Blau beim Hover */
-}
-
-/* Hero-Bereich */
-.hero {
-    background: linear-gradient(135deg, #F4F5F7, #E0E2E5); /* Leichter Farbverlauf */
-    color: #212529; /* Neutrales Dunkelgrau */
-    text-align: center;
-    padding: 5rem 2rem; /* Fügt links und rechts Padding hinzu */
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    max-width: 1100px;
-    margin: 0 auto; /* Zentriert den Hero-Inhalt */
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #556B8D; /* Entspricht der Menüfarbe */
-}
-
-.hero p {
-    font-size: 19px; /* Erhöht die Textgröße um 1px */
-    font-weight: 400;
-    margin-bottom: 2rem;
-}
-
-.hero .cta-button {
-    background: #556B8D;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 24px;
-    padding: 0.8rem 2rem;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.hero .cta-button:hover {
-    background: #8899B0; /* Weicheres Blau beim Hover */
-}
-
-/* Abschnittsüberschriften */
-h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: #556B8D; /* Entspricht Menü und Hero für Konsistenz */
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #8899B0; /* Weicheres Blau-Grau */
-}
-
-/* Textblöcke */
-p {
-    font-size: 19px; /* Erhöht die Textgröße um 1px */
-    color: #212529; /* Neutrales Dunkelgrau für Lesbarkeit */
-    line-height: 1.8; /* Erhöht für besseren Textabstand */
-    margin-bottom: 1.5rem; /* Abstand zwischen Absätzen */
-}
-
-/* Skills-Bereich */
-.skills {
-    background: white;
-    padding: 4rem 2rem;
-    text-align: center;
-    max-width: 1100px;
-    margin: 0 auto; /* Zentriert den Abschnitt */
-}
-
-.skills h2 {
-    color: #556B8D; /* Entspricht der Menüfarbe */
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-}
-
-.skill-card {
-    padding: 2rem;
-    border-radius: 12px;
-    background: #F4F5F7;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-align: center;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card img {
-    max-width: 50px;
-    margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.skill-card p {
-    font-size: 16px;
-    color: #6B7280; /* Neutrales Mittelgrau für Beschreibungen */
-}
-
-/* Portfolio-Bereich */
-.portfolio {
-    background: #F4F5F7; /* Helles Grau */
-    padding 
+    <script src="scripts/main.js"></script>
+</body>
+</html>
