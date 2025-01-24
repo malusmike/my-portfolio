@@ -3,14 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F5F7; /* Light gray for a professional feel */
-    color: #212529; /* Neutral dark gray for text */
-    line-height: 1.7; /* Slightly taller line-height for better readability */
+    background-color: #F4F5F7; /* Helles Grau für ein professionelles Erscheinungsbild */
+    color: #212529; /* Neutrales Dunkelgrau für Text */
+    line-height: 1.7; /* Etwas größerer Zeilenabstand für bessere Lesbarkeit */
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
 
-/* General Reset */
+/* Allgemeiner Reset */
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
@@ -29,21 +29,20 @@ a {
 }
 
 a:hover {
-    color: #556B8D; /* Muted Blue hover color */
+    color: #556B8D; /* Gedämpfte blaue Hover-Farbe */
 }
 
-/* Container for Page Content */
+/* Container für Seiteninhalt */
 .container {
-    max-width: 80%; /* 80% of the available width */
-    margin: 0 auto; /* Centers the content horizontally */
-    padding: 0 2rem; /* Adds padding on the left and right for small screens */
-    box-sizing: border-box;
+    max-width: 1100px; /* Begrenzung der Inhaltsbreite */
+    margin: 0 auto; /* Zentriert den Inhalt horizontal */
+    padding: 0 2rem; /* Fügt links und rechts Padding hinzu */
 }
 
 /* Header */
 header {
-    background-color: #FFFFFF; /* Clean white header */
-    border-bottom: 1px solid #E0E2E5; /* Light border for subtle separation */
+    background-color: #FFFFFF; /* Sauberer weißer Header */
+    border-bottom: 1px solid #E0E2E5; /* Leichte Trennlinie */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -66,54 +65,50 @@ header {
 .sticky-header li a {
     font-size: 16px;
     font-weight: 500;
-    color: #556B8D; /* Muted Blue */
+    color: #556B8D; /* Gedämpftes Blau */
     transition: color 0.3s ease;
 }
 
 .sticky-header li a:hover {
-    color: #8899B0; /* Softer blue-gray */
+    color: #8899B0; /* Weicheres Blau-Grau */
 }
 
 .sticky-header .cta-button {
-    background: #556B8D; /* Muted Blue */
+    background: #556B8D; /* Gedämpftes Blau */
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 24px;
-    padding: 0.8rem 2rem; /* Larger padding for easier touch interaction */
-    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
     cursor: pointer;
-    display: flex; /* Flexibility for better alignment */
-    align-items: center;
-    justify-content: center;
     transition: background 0.3s ease;
 }
 
 .sticky-header .cta-button:hover {
-    background: #8899B0; /* Softer blue on hover */
+    background: #8899B0; /* Weicheres Blau beim Hover */
 }
 
-/* Hero Section */
+/* Hero-Bereich */
 .hero {
-    background: linear-gradient(135deg, #F4F5F7, #E0E2E5); /* Light gradient background */
-    color: #212529; /* Neutral dark gray */
+    background: linear-gradient(135deg, #F4F5F7, #E0E2E5); /* Leichter Farbverlauf */
+    color: #212529; /* Neutrales Dunkelgrau */
     text-align: center;
-    padding: 5rem 2rem; /* Adds left and right padding */
+    padding: 5rem 2rem; /* Fügt links und rechts Padding hinzu */
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    max-width: 80%; /* Changed to 80% of the available width */
-    margin: 0 auto; /* Centers hero content */
-    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 0 auto; /* Zentriert den Hero-Inhalt */
 }
 
 .hero h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #556B8D; /* Matches the menu color */
+    color: #556B8D; /* Entspricht der Menüfarbe */
 }
 
 .hero p {
-    font-size: 19px; /* Increased body text by 1px */
+    font-size: 19px; /* Erhöht die Textgröße um 1px */
     font-weight: 400;
     margin-bottom: 2rem;
 }
@@ -124,56 +119,49 @@ header {
     font-weight: bold;
     border: none;
     border-radius: 24px;
-    padding: 1rem 2rem; /* Better padding for touch devices */
+    padding: 0.8rem 2rem;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .hero .cta-button:hover {
-    background: #8899B0; /* Softer blue on hover */
+    background: #8899B0; /* Weicheres Blau beim Hover */
 }
 
-/* Section Headings */
+/* Abschnittsüberschriften */
 h2 {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #556B8D; /* Matches menu and hero for consistency */
+    color: #556B8D; /* Entspricht Menü und Hero für Konsistenz */
 }
 
 h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #8899B0; /* Softer blue-gray */
+    color: #8899B0; /* Weicheres Blau-Grau */
 }
 
-/* Text Blocks */
+/* Textblöcke */
 p {
-    font-size: 19px; /* Increased text size by 1px */
-    color: #212529; /* Neutral dark gray for readability */
-    line-height: 1.8; /* Increase for better text spacing */
-    margin-bottom: 1.5rem; /* Space between paragraphs */
+    font-size: 19px; /* Erhöht die Textgröße um 1px */
+    color: #212529; /* Neutrales Dunkelgrau für Lesbarkeit */
+    line-height: 1.8; /* Erhöht für besseren Textabstand */
+    margin-bottom: 1.5rem; /* Abstand zwischen Absätzen */
 }
 
-/* Images */
-img {
-    max-width: 100%; /* Ensure images do not exceed container width */
-    height: auto; /* Maintain proportional height */
-}
-
-/* Skills Section */
+/* Skills-Bereich */
 .skills {
     background: white;
     padding: 4rem 2rem;
     text-align: center;
-    max-width: 80%; /* Changed to 80% of the available width */
-    margin: 0 auto; /* Centers the section */
-    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 0 auto; /* Zentriert den Abschnitt */
 }
 
 .skills h2 {
-    color: #556B8D; /* Matches menu color */
+    color: #556B8D; /* Entspricht der Menüfarbe */
 }
 
 .skills-grid {
@@ -209,91 +197,12 @@ img {
 
 .skill-card p {
     font-size: 16px;
-    color: #6B7280; /* Neutral medium gray for descriptions */
+    color: #6B7280; /* Neutrales Mittelgrau für Beschreibungen */
 }
 
-/* Portfolio Section */
+/* Portfolio-Bereich */
 .portfolio {
-    background: #F4F5F7; /* Light gray */
-    padding: 4rem 2rem;
-    max-width: 80%; /* Changed to 80% of the available width */
-    margin: 0 auto; /* Centers the section */
-    box-sizing: border-box;
-}
-
-.portfolio h2 {
-    color: #556B8D; /* Matches menu color */
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.portfolio-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.portfolio-card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 1rem;
-    color: #8899B0; /* Softer blue for project titles */
-}
-
-/* Footer */
-footer {
-    background: #556B8D; /* Muted Blue */
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 4rem;
-}
-
-footer a {
-    color: #E0E2E5;
-    font-weight: 500;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-}
-
-footer a:hover {
-    color: #FFFFFF; /* White on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .sticky-header ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .skills-grid,
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* Adjust grid for smaller screens */
-    }
-
-    .intro-text {
-        text-align: center; /* Center text on small screens */
-    }
-}
+    background: #F4F5F7; /* Helles Grau */
+    padding
+::contentReference[oaicite:0]{index=0}
+ 
