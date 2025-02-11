@@ -12,31 +12,35 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Michael Gartner</h1>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="pages/CV.html">Experience</a>
-                <a href="pages/portfolio.html">Portfolio</a>
-                <a href="#downloads">Downloads</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+        <nav class="sticky-header">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="pages/CV.html">Experience</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="home">
-        <section class="hero">
-            <div class="container">
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-text">
                 <h1>Hey, I am Michael</h1>
                 <p class="slogan">Driving Digital Transformation and Innovation across industries.</p>
                 <p class="subslogan">
                     With extensive experience in blockchain solutions, agile methodologies, and strategic project management, I help businesses achieve operational excellence.
                 </p>
-                <a class="cta-button" href="mailto:migal@gmx.at">Get in Touch</a>
+                <a class="button-filled" href="mailto:migal@gmx.at">Get in Touch</a>
+            </div>
+            <div class="intro-image">
+                <img src="assets/profile.jpg" alt="Michael Gartner">
             </div>
         </section>
 
-        <section class="container skills">
+        <!-- Skills Section -->
+        <section class="skills">
             <h2>Top Skills</h2>
             <div class="skills-grid">
                 <div class="skill">
@@ -54,11 +58,22 @@
                     <h3>Product Management</h3>
                     <p>Developing innovative products for emerging markets.</p>
                 </div>
+                <div class="skill">
+                    <img src="assets/icons/security.png" alt="Security">
+                    <h3>IT Governance</h3>
+                    <p>Ensuring compliance and robust security practices.</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/icons/strategy.png" alt="Strategy">
+                    <h3>Technology Strategy</h3>
+                    <p>Aligning business goals with technology innovations.</p>
+                </div>
             </div>
         </section>
 
+        <!-- About Me Section -->
         <section class="about">
-            <div class="container about-content">
+            <div class="about-content">
                 <img src="assets/about.jpg" alt="About Michael Gartner">
                 <div>
                     <h2>About Me</h2>
@@ -70,7 +85,8 @@
             </div>
         </section>
 
-        <section class="container portfolio-preview">
+        <!-- Portfolio Links -->
+        <section class="portfolio-preview">
             <h2>My Work</h2>
             <div class="portfolio-links">
                 <a href="pages/project1.html">
@@ -89,12 +105,14 @@
         </section>
     </main>
 
-    <section id="downloads" class="container">
+    <!-- Download Section -->
+    <section id="downloads">
         <h2>Downloads</h2>
-        <a class="cta-button" href="downloads/michael_gartner_cv.pdf" download>Download CV</a>
+        <a class="button-outline" href="downloads/michael_gartner_cv.pdf" download>Download CV</a>
     </section>
 
-    <section id="contact" class="container">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
         <form action="mailto:migal@gmx.at" method="POST">
             <label for="name">Name:</label>
@@ -114,9 +132,7 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Michael Gartner</p>
-        </div>
+        <p>© 2025 Michael Gartner</p>
     </footer>
 
     <script src="scripts/main.js"></script>
